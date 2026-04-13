@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday My Love ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg,#0f051d,#1a0933,#2b0a3d);
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+.container{
+    padding:40px;
+}
+
+h1{
+    font-size:60px;
+    color:#ff4da6;
+    text-shadow:0 0 20px pink;
+}
+
+h2{
+    color:#ff80bf;
+}
+
+.love{
+    font-size:25px;
+    line-height:1.9;
+    max-width:900px;
+    margin:auto;
+}
+
+.heart{
+    position:fixed;
+    top:-10px;
+    font-size:25px;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    0%{transform:translateY(-10vh);}
+    100%{transform:translateY(110vh);}
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:30px;
+    background:#ff4da6;
+    color:white;
+    cursor:pointer;
+    margin-top:30px;
+    box-shadow:0 0 15px pink;
+}
+
+.hidden{
+    display:none;
+    margin-top:30px;
+    font-size:28px;
+    color:#ffd6f5;
+}
+
+footer{
+    margin-top:50px;
+    font-size:18px;
+    color:#bbb;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>🎉 Happy Birthday My Princess 🎉</h1>
+
+<h2>❤️ My Forever Favourite Person ❤️</h2>
+
+<div class="love">
+Today is not just your birthday…  
+Today is the day the world became more beautiful,  
+because YOU were born 💖  
+
+You are the reason my days feel brighter ☀️  
+the reason my nights feel warmer 🌙  
+and the reason my heart smiles without a reason 😊  
+
+You came into my life like a soft melody 🎶  
+and slowly became my favourite song.  
+Every moment with you feels magical ✨  
+Every conversation feels special 💬  
+Every smile of yours feels like my biggest achievement 🥹  
+
+I don't know what I did to deserve you,  
+but I promise to spend my whole life being grateful for you 💞  
+
+You are my peace, my happiness, my comfort, my safe place 💗  
+You are not just my girlfriend…  
+You are my HOME 🏡❤️  
+
+On your special day, I just want you to know…  
+I will always stand beside you 🤝  
+I will always support you 🌸  
+I will always love you more and more every single day 💘  
+
+Happy Birthday my love 🎂  
+You are my today, my tomorrow and my forever 💍  
+</div>
+
+<button onclick="showSurprise()">Click for Surprise 🎁</button>
+
+<div id="msg" class="hidden">
+I LOVE YOU SO MUCH ❤️❤️❤️  
+Forever Yours 💞
+</div>
+
+<footer>
+Made with Endless Love ❤️
+</footer>
+</div>
+
+<script>
+function showSurprise(){
+    document.getElementById("msg").style.display="block";
+}
+
+// floating hearts
+setInterval(()=>{
+    const heart=document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML="💖";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.animationDuration=(Math.random()*3+3)+"s";
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),6000);
+},300);
+</script>
+
+</body>
+</html>
